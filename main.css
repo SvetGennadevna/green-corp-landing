@@ -212,6 +212,163 @@ body {
   margin-bottom: 15px;
  }
 
+ .features {
+  background-color: #fff;
+  padding: 115px 60px;
+ }
+
+
+ .cards { 
+   display: grid;
+   grid-column-gap: 50px;
+   grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ .card{
+   padding: 35px 40px 25px 40px;
+   background: #FFFFFF;
+   border: 1px solid #D9E4E6;
+   border-radius: 5px;
+ }
+
+ .card p{
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 22px;
+ }
+
+ .card__logo{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background: #eaeff9;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .card__logo.left{
+   color:#ffb406;
+ }
+
+ .card__logo.center{
+  color:#ad1714;
+}
+
+.card__logo.right{
+  color:#22a030;
+}
+
+.features__border{
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid #E6EAF4;
+}
+
+.features__feedback{
+  display: flex;
+  justify-content: center;
+}
+
+.features__feedback-left{
+  margin-right: 10px;
+}
+
+.features__feedback-left h2{
+  font-size: 48px;
+}
+
+.features__feedback-left p{
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right{
+  display: flex;
+  /*align-items: center;*/
+}
+
+.features__box{
+  padding: 30px 40px 25px 40px;
+  color: #FFFFFF;
+  border-radius: 25px;
+}
+
+.features__box h3{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.features__savings-box{
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+
+.features__rate-box{
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+
+.stars{
+  color:#ff7039;
+}
+
+.promo{
+  display: flex;
+}
+
+.promo__image{
+  background-image: url(img/promo.jpg);
+  width: 50%;
+  background-size: cover;
+  flex-shrink: 0;
+  background-position: center;
+}
+
+.promo__right{
+  background-color:#dd5f26;
+  padding: 160px 60px 160px 60px;
+}
+
+.promo__text{
+  background-color: white;
+  padding: 30px 40px;
+  line-height: 22px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+.promo__text p{
+  opacity: 0.8;
+}
+
+.promo__text p::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #ec6b29;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.promo__text button{
+background: #107b1c;
+margin-top:20px;
+font-size: 18px;
+padding: 15px 30px;
+font-weight: 600;
+box-shadow: 0 16px 36px rgb(16 122 28 / 30%);
+}
+
+
  @keyframes rotation {
   0%{
     transform: rotate(0deg);
@@ -319,5 +476,5 @@ body {
     .about__sun-image {
         width: 75px;
         height: 75px;
-    }
+    }   
   }
